@@ -1,0 +1,11 @@
+version: '1.0'
+
+services:
+  svelte-app:
+    build:
+      context: .
+      args:
+        - NODE_ENV=production
+    environment:
+      - NODE_ENV=production
+    command: node index.js
