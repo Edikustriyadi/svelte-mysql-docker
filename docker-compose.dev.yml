@@ -1,7 +1,7 @@
 version: '1.0'
 
 services:
-  svelte-app:
+  app:
     build:
       context: .
       args:

@@ -1,6 +1,8 @@
-FROM node:23-alpine
+FROM node:23-alpine AS builder
+
 WORKDIR /app
-COPY package.json .
+
+COPY package.json package-lock.json ./
 
 ARG NODE_ENV
 RUN if ["$NODE_ENV" = "development"];\
